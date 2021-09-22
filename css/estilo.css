@@ -6,16 +6,61 @@
 }
 body{
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: initial;
+    /* font-weight: initial; */
 }
+
 /* navbar */
 #navbar{
     display: flex;
     background-color: rgba(0,0,0,.6);
     color: white;
     justify-content: center;
+    position: fixed;
+    width: 100%;
 }
-.navbar-container{
+#navbar .navbar-container{
     width: 60%;
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* justify-content: space-between; da o espaço entre os itens */
+    padding: 20px 0;
+}
+#navbar .navbar-container .logo{
+    height: 40px;
+    width: auto;
+}
+#navbar .navbar-container ul{
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+}
+#navbar .navbar-container ul li {
+    padding: 0 20px;
+} 
+#navbar .navbar-container ul li:nth-child(3){
+    /* :nth-child seleiona a lista que queremos personalizar */
+    border-right: 1px solid white;
+}
+/* Show Case */
+#showcase{
+    height: 100vh;
+    /* Ocupara a posicao 100% do usuario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: url("/img/pexels-anna-pou-8132711.jpg") center center/cover;
+    background-color: rgba(0,0,0,0.5);
+    background-blend-mode: color;
+}
+.shocase-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.showcase-container h1{
+    font-size: 5rem;
 }
