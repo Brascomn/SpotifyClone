@@ -12,6 +12,18 @@ body{
     font-family: 'Tagon';
     /* font-weight: initial; */
 }
+/* Utility Classes */
+.btn-container{
+    background:#1db954 ;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px 50px;
+    border: none;
+    border-radius: 30px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+      
+}
 
 /* navbar */
 #navbar{
@@ -22,6 +34,7 @@ body{
     position: fixed;
     width: 100%;
 }
+
 #navbar .navbar-container{
     width: 60%;
     display: flex;
@@ -30,22 +43,27 @@ body{
     /* justify-content: space-between; da o espaço entre os itens */
     padding: 20px 0;
 }
-#navbar .navbar-container .logo{
+/* Logo é geral*/
+.logo{
     height: 40px;
     width: auto;
 }
+
 #navbar .navbar-container ul{
     display: flex;
     list-style: none;
     font-weight: bold;
 }
+
 #navbar .navbar-container ul li {
     padding: 0 20px;
-} 
+}
+
 #navbar .navbar-container ul li:nth-child(3){
     /* :nth-child seleiona a lista que queremos personalizar */
     border-right: 1px solid white;
 }
+
 /* Show Case */
 #showcase{
     height: 100vh;
@@ -57,8 +75,9 @@ body{
     background: url("/img/pexels-anna-pou-8132711.jpg") center center/cover;
     background-color: rgba(0,0,0,0.5);
     background-blend-mode: color;
-}
-.shocase-container{
+} 
+
+#showcase .showcase-container{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -69,7 +88,36 @@ body{
     font-size: 5rem;
 }
 .showcase-container p{
-    margin: 15px 0;
+    margin: 15px 0; 
     font-size: 1.1em;
 }
-
+#footer{
+   background: black;
+   color: white;
+}
+#footer .footer-content{
+    display:flex;
+    width: 60%;
+    margin: auto;
+    justify-content: center;
+}
+#footer .footer-content .footer-menu {
+    margin: 0 60px;
+    list-style: none;
+}
+#footer .footer-content .footer-menu .footer-menu -item{
+    margin: 25px 0;
+}
+#footer .footer-content .footer-menu p{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #919496;
+    font-size: 0.8rem;
+}
+.socials{
+    display: flex;
+}
+.socials i{
+    margin: 0 20px;
+    font-size: 1.4rem;
+}
