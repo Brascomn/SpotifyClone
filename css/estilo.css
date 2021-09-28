@@ -110,12 +110,12 @@ body{
 #footer{
    background: black;
    color: white;
+   padding: 80px 0;
 }
 #footer .footer-content{
     display:flex;
     width: 60%;
     margin: auto;
-    padding: 80px 0;
 }
 #footer .footer-content .footer-menu {
     margin: 0 60px;
@@ -129,11 +129,42 @@ body{
     text-transform: uppercase;
     color: #919496;
     font-size: 0.8rem;
-}
+} 
+/* Footer Soocials */
 .socials{
     display: flex;
 }
 .socials i{
     margin: 0 20px;
     font-size: 1.7rem;
+}
+
+/* Footer Info */
+.footer-info{
+display: flex;
+justify-content: space-between;
+align-items: flex-end;
+width: 60%;
+margin: auto;
+}
+.footer-info .footer-info-itens {
+    display: flex;
+    list-style: none;
+}
+.footer-info .footer-info-itens .footer-info-item{
+    margin: 0 10px;
+    font-weight: bold;
+    color:#919496 ;
+    font-size:0.7rem ;
+}
+.footer-info .rights{
+}
+.footer-info .rights .country{
+    display: flex;
+
+}
+.footer-info .rights .country .Africa-flag{
+    height: 20px;
+    width: auto;
+    display: inline-block;
 }
