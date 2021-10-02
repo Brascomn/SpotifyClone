@@ -37,8 +37,13 @@ body{
     border: none;
     border-radius: 30px;
     letter-spacing: 1px;
-    font-weight: bolder;
-      
+    font-weight: bolder;    
+    transition: all 1s ease;
+}
+
+.btn-container:hover{
+    background: #0f7533;
+    cursor: pointer;
 }
 
 /* navbar */
@@ -73,6 +78,11 @@ body{
 
 #navbar .navbar-container ul li {
     padding: 0 20px;
+}
+#navbar .navbar-container ul li:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 
 #navbar .navbar-container ul li:nth-child(3){
@@ -122,6 +132,11 @@ body{
     margin: auto;
     justify-content: space-between;
 }
+#footer .footer-container li:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: all 1s ease;
+}
 #footer .footer-container .footer-menu {
     margin: 0 60px;
     list-style: none;
@@ -140,10 +155,17 @@ body{
     display: flex;
 }
 .socials i{
-    margin: 0 20px;
+    margin: 0 10px;
     font-size: 1.7rem;
+    border-radius: 5px;
+    height: 30px;
+    transition: all 1s ease;
 }
-
+.socials i:hover{
+    background-color: #1db954;
+    cursor: pointer;
+}
+    
 /* Footer Info */
 .footer-info{
 display: flex;
@@ -162,17 +184,25 @@ padding-top: 10px;
 }
 .footer-info .footer-info-itens .footer-info-item{
     margin: 0 10px;
-
+    transition: all 1s ease;
+    
 }
-.footer-info .rights{
-
+.footer-info .footer-info-itens .footer-info-item:hover{
+    color: #1db954;
+    cursor: pointer;
 }
+
 .footer-info .rights .country{
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 10px;
 
+}
+.footer-info .rights .country:hover{
+    color: #1db954;
+    cursor: pointer;
+    transition: all 1s ease;
 }
 .footer-info .rights .country img {
     width: 30px;
@@ -185,3 +215,4 @@ padding-top: 10px;
     display: inline-block;
     margin-left: 10px;
 }
+/* done */
